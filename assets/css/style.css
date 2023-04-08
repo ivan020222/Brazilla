@@ -1,3 +1,4 @@
+/* header styles start*/
 .header{
     background-color: #EEEFF1;
 }
@@ -41,7 +42,6 @@
     background: #FFFFFF; 
     color: #000000;
 }
-
 .basket:hover{
      background: #000000; 
      color: #FFFFFF;
@@ -49,3 +49,4 @@
 .container{
     max-width: 85%;
 }
+/* header styles end */
