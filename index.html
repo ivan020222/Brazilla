@@ -34,10 +34,10 @@
                                     <a class="nav-link" href="#">Home</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" href="#">About Us</a>
+                                    <a class="nav-link" href="#explore">Про нас</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" href="#">Find Us</a>
+                                    <a class="nav-link" href="#">Зв'язатися з нами</a>
                                 </li>
                                 <li class="nav-item me-3">
                                     <a class="nav-link" href="#">Alowishus Catering</a>
@@ -46,8 +46,7 @@
                             <div class="d-flex">
                                 <button class="btn basket me-3" type="button"><i
                                         class="fa-solid fa-basket-shopping"></i></button>
-                                <button class="btn btn-dark buy" type="submit"><span class="buying">Buy gift
-                                        vouchers</span></button>
+                                <button class="btn btn-dark buy" type="submit"><span class="buying">Купити бленди</span></button>
                             </div>
                         </div>
                     </div>
@@ -73,29 +72,29 @@
 
     <main class="main">
         <div class="container">
-            <section class="explore">
+            <section class="explore" id="explore">
                 <div class="explore-heading text-center">
                     <h2>Смачна та якiсна кава - це про нас</h2>
                     <p class="subheading p_center mx-auto mt-3 mb-5">Тут Ви можете дiзнатися бiльше про нашу компанiю та
                         каву. А також на Вас чекають рецепти
                         найсмачнiшої кави на свiтi.</p>
                 </div>
-                <div class="explore-cards d-flex justify-content-between">
-                    <div class="card">
+                <div class="explore-cards d-flex justify-content-between flex-wrap flex-lg-nowrap">
+                    <div class="card me-lg-3">
                         <img src="img/coffee-shop.jpg" class="card-img-top" alt="Магазин кави">
                         <div class="card-body">
                             <h5 class="card-title">Про нашу компанiю</h5>
                             <p class="card-text">Ми закуповуємо зерна з латинської Америки, самi обсмажуємо, перемелюємо
                                 i мiксуємо.</p>
-                            <a href="#" class="btn btn-dark">Дiзнатися бiльше</a>
+                            <a href="#about_us" class="btn btn-dark">Дiзнатися бiльше</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card me-lg-3">
                         <img src="img/coffee-beans.jpg" class="card-img-top" alt="Кавовi зерна">
                         <div class="card-body">
                             <h5 class="card-title">Про каву</h5>
                             <p class="card-text">Тут на Вас чекають цiкавi факти про каву та iсторiя кави.</p>
-                            <a href="#" class="btn btn-dark">Дiзнатися бiльше</a>
+                            <a href="#about_coffee" class="btn btn-dark">Дiзнатися бiльше</a>
                         </div>
                     </div>
                     <div class="card">
@@ -104,12 +103,12 @@
                             <h5 class="card-title">Рецепти кави</h5>
                             <p class="card-text">Правильно пiдiбраний бленд - запорука успiху пiд час приготування кави.
                             </p>
-                            <a href="#" class="btn btn-dark">Дiзнатися бiльше</a>
+                            <a href="#recipes" class="btn btn-dark">Дiзнатися бiльше</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="about_us">
+            <section class="about_us" id="about_us">
                 <div class="row d-flex align-items-center">
                     <div class="img_about col-lg-7 col-12 mb-3">
                         <img src="img/coffee-about.jpg" class="about_image w-100" alt="Про нас">
@@ -127,7 +126,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about_coffee">
+            <section class="about_coffee" id="about_coffee">
                 <div class="row d-flex align-items-center">
                     <div class="about_coffee_facts col-lg-5 col-12 order-last order-lg-first">
                         <h2>Про каву</h2>
@@ -145,7 +144,8 @@
                         <p class="subheading mb-3">
                             Пропонуємо пройти невеликий тест про каву, аби дiзнатися наскiльки добре Ви знаєте про каву.
                         </p>
-                        <button class="btn btn-dark me-2" type="buttton">Дiзнатися бiльше</button>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%BA%D0%B0%D0%B2%D0%B8"
+                            target="_blank" class="btn btn-dark me-2" type="buttton">Дiзнатися бiльше</a>
                         <button class="btn btn-dark" type="buttton">Пройти тест</button>
                     </div>
                     <div class="video_coffee col-lg-7 col-12 order-first order-lg-last">
@@ -158,11 +158,11 @@
                     </div>
                 </div>
             </section>
-            <section class="recipes">
+            <section class="recipes" id="recipes">
                 <div class="recipes-heading text-center">
                     <h2>Рецепти кави</h2>
-                    <p class="subheading p_center mx-auto mt-3 mb-5">Запорукою приготування смачної кави є три складові:
-                        правильно підібраний бленд, якісна вода та найкращий рецепт</p>
+                    <p class="subheading p_center mx-auto mt-3 mb-5">Запорукою приготування смачної кави є три складовi:
+                        правильно пiдiбраний бленд, якiсна вода та найкращий рецепт</p>
                 </div>
                 <div class="recipes-content">
                     <div class="accordion accordion-flush" id="accordionRecipes">
@@ -178,12 +178,12 @@
                                 <div class="accordion-body row d-flex align-items-center">
                                     <div class="recipe_image col-lg-5 col-12">
                                         <img src="img/recipe1.jpg" class="recipe1_img"
-                                            alt="Кава з кардамоном">
+                                            alt="Кава з кардамоном по-арабськи">
                                     </div>
                                     <div class="recipe1 col-lg-7 col-12">
                                         <div class="ingredients">
                                             <ul>
-                                                <li>2 ч. ложки свіжозмеленої меленої кави</li>
+                                                <li>2 ч. ложки свiжозмеленої меленої кави</li>
                                                 <li>100 мл води</li>
                                                 <li>2 зернини кардамону</li>
                                                 <li>цукор до смаку</li>
@@ -191,14 +191,15 @@
                                         </div>
                                         <div class="prepare">
                                             <ol>
-                                                <li>Мелену каву, цукор і розчавлені давлені зерна кардамону насипати в
-                                                    турку. Залити все це чистою холодною водою і поставити на маленький
+                                                <li>Мелену каву, цукор i розчавленi давленi зерна кардамону насипати в
+                                                    турку. Залити все це чистою холодною водою i поставити на маленький
                                                     вогонь.</li>
-                                                <li>Щойно з’явиться на поверхні біла плівка, турку зняти з вогню і поставити
-                                                    назад через 5-7 секунд. Цю процедуру слід повторити 2-3 рази, не
+                                                <li>Щойно з’явиться на поверхнi бiла плiвка, турку зняти з вогню i
+                                                    поставити
+                                                    назад через 5-7 секунд. Цю процедуру слiд повторити 2-3 рази, не
                                                     допускаючи закипання</li>
-                                                <li>Після цього накрити каву кришкою і відставити, щоб настоялася. Через
-                                                    кілька хвилин налити у філіжанку і подавати.</li>
+                                                <li>Пiсля цього накрити каву кришкою i вiдставити, щоб настоялася. Через
+                                                    кiлька хвилин налити у фiлiжанку i подавати.</li>
                                             </ol>
                                         </div>
                                     </div>
@@ -209,166 +210,178 @@
                             <h3 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                                    Кава з корицею по-голландськи
                                 </button>
                             </h3>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
-                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                                <div class="accordion-body row d-flex align-items-center">
+                                    <div class="recipe_image col-lg-5 col-12">
+                                        <img src="img/recipe2.jpg" class="recipe2_img"
+                                            alt="Кава з корицею по-голландськи">
+                                    </div>
+                                    <div class="recipe2 col-lg-7 col-12">
+                                        <div class="ingredients">
+                                            <ul>
+                                                <li>150 мл натуральної кави</li>
+                                                <li>1 ст. ложка густих вершкiв</li>
+                                                <li>1 паличка корицi (або 0,5 ч. ложки меленої)</li>
+                                                <li>0,5 ч. ложки вершкового масла</li>
+                                                <li>цукор до смаку</li>
+                                            </ul>
+                                        </div>
+                                        <div class="prepare">
+                                            <ol>
+                                                <li>Зварити каву в турцi або за допомогою кавового апарата.</li>
+                                                <li>Кавову чашку облити окропом, покласти в неї паличку корицi, налити
+                                                    готову гарячу каву.</li>
+                                                <li>Влити вершки та додати цукор за смаком.</li>
+                                                <li>Зверху покласти грудочку вершкового масла.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                                    Кава з вiскi по-iрландськи
                                 </button>
                             </h3>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body row d-flex align-items-center">
+                                    <div class="recipe_image col-lg-5 col-12">
+                                        <img src="img/recipe3.jpg" class="recipe3_img" alt="Кава з вiскi по-iрландськи">
+                                    </div>
+                                    <div class="recipe3 col-lg-7 col-12">
+                                        <div class="ingredients">
+                                            <ul>
+                                                <li>80 мл свiжозвареної чорної кави</li>
+                                                <li>40 мл iрландського вiскi</li>
+                                                <li>1 ч. ложка коричневого цукру</li>
+                                                <li>30 мл збитих вершкiв</li>
+                                            </ul>
+                                        </div>
+                                        <div class="prepare">
+                                            <ol>
+                                                <li>Зварити мiцну каву в турцi або кавомашинi.</li>
+                                                <li>У попередньо нагрiту склянку влити свiжозварену каву, додати цукор i
+                                                    перемiшати до повного розчинення цукру.</li>
+                                                <li>Додати до сумiшi вiскi i прикрасити поверхню напою збитими вершками.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Accordion Item #4
+                                    Медова кава
                                 </button>
                             </h3>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body row d-flex align-items-center">
+                                    <div class="recipe_image col-lg-5 col-12">
+                                        <img src="img/recipe4.jpg" class="recipe4_img" alt="Медова кава">
+                                    </div>
+                                    <div class="recipe4 col-lg-7 col-12">
+                                        <div class="ingredients">
+                                            <ul>
+                                                <li>200 мл свiжозвареної мiцної чорної кави</li>
+                                                <li>2 ч. ложки меду</li>
+                                                <li>2 ст. ложки збитих вершкiв</li>
+                                                <li>2 щiпки меленої корицi</li>
+                                                <li>лiд</li>
+                                            </ul>
+                                        </div>
+                                        <div class="prepare">
+                                            <ol>
+                                                <li>Зварити у будь-який спосiб та охолодити каву, налити у високу
+                                                    склянку, додати мед, зверху викласти шапочку зi збитих вершкiв.</li>
+                                                <li>Вершки посипати корицею.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Accordion Item #5
+                                    Кавово-банановий смузi
                                 </button>
                             </h3>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body row d-flex align-items-center">
+                                    <div class="recipe_image col-lg-5 col-12">
+                                        <img src="img/recipe5.jpg" class="recipe5_img" alt="Кавово-банановий смузi">
+                                    </div>
+                                    <div class="recipe5 col-lg-7 col-12">
+                                        <div class="ingredients">
+                                            <ul>
+                                                <li>70 мл натуральної охолодженої кави</li>
+                                                <li>50 мл молока</li>
+                                                <li>0,5 банана</li>
+                                                <li>100 г вершкового морозива</li>
+                                                <li>1 ст. ложка тертого шоколаду</li>
+                                            </ul>
+                                        </div>
+                                        <div class="prepare">
+                                            <ol>
+                                                <li>Зварити будь-яким способом каву та повнiстю охолодити.</li>
+                                                <li>Всi iнгредiєнти (крiм шоколаду) покласти в чашу блендера i збити до
+                                                    однорiдної маси з густою пiнної шапкою.</li>
+                                                <li>Отриману сумiш вилити у високу склянку, посипати тертим шоколадом.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false"
-                                    aria-controls="collapseSix">
-                                    Accordion Item #6
-                                </button>
-                            </h3>
-                            <div id="collapseSix" class="accordion-collapse collapse"
-                                aria-labelledby="headingSix" data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blends" id="blends">
+                <div class="blends-heading text-center">
+                    <h2>Нашi кавовi бленди</h2>
+                    <p class="subheading p_center mx-auto mt-3 mb-5">Тут Ви можете обрати бленд на свiй смак у нашому фiрмовому екологiчному пакуваннi.</p>
+                </div>
+                <div class="blends-cards d-flex justify-content-between flex-wrap flex-lg-nowrap">
+                    <div class="card me-lg-3">
+                        <img src="img/coffee-shop.jpg" class="card-img-top" alt="Магазин кави">
+                        <div class="card-body">
+                            <h5 class="card-title">Про нашу компанiю</h5>
+                            <p class="card-text">Ми закуповуємо зерна з латинської Америки, самi обсмажуємо, перемелюємо
+                                i мiксуємо.</p>
+                            <a href="#about_us" class="btn btn-dark">Дiзнатися бiльше</a>
                         </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven" aria-expanded="false"
-                                    aria-controls="collapseSeven">
-                                    Accordion Item #7
-                                </button>
-                            </h3>
-                            <div id="collapseSeven" class="accordion-collapse collapse"
-                                aria-labelledby="headingSeven" data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
+                    </div>
+                    <div class="card me-lg-3">
+                        <img src="img/coffee-beans.jpg" class="card-img-top" alt="Кавовi зерна">
+                        <div class="card-body">
+                            <h5 class="card-title">Про каву</h5>
+                            <p class="card-text">Тут на Вас чекають цiкавi факти про каву та iсторiя кави.</p>
+                            <a href="#about_coffee" class="btn btn-dark">Дiзнатися бiльше</a>
                         </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingEight">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEight" aria-expanded="false"
-                                    aria-controls="collapseEight">
-                                    Accordion Item #8
-                                </button>
-                            </h3>
-                            <div id="collapseEight" class="accordion-collapse collapse"
-                                aria-labelledby="headingEight" data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/coffee-cup.jpg" class="card-img-top" alt="Чашка кави">
+                        <div class="card-body">
+                            <h5 class="card-title">Рецепти кави</h5>
+                            <p class="card-text">Правильно пiдiбраний бленд - запорука успiху пiд час приготування кави.
+                            </p>
+                            <a href="#recipes" class="btn btn-dark">Дiзнатися бiльше</a>
                         </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingNine">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseNine" aria-expanded="false"
-                                    aria-controls="collapseNine">
-                                    Accordion Item #9
-                                </button>
-                            </h3>
-                            <div id="collapseNine" class="accordion-collapse collapse"
-                                aria-labelledby="headingNine" data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingTen">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTen" aria-expanded="false"
-                                    aria-controls="collapseTen">
-                                    Accordion Item #10
-                                </button>
-                            </h3>
-                            <div id="collapseTen" class="accordion-collapse collapse"
-                                aria-labelledby="headingTen" data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingEleven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEleven" aria-expanded="false"
-                                    aria-controls="collapseEleven">
-                                    Accordion Item #11
-                                </button>
-                            </h3>
-                            <div id="collapseEleven" class="accordion-collapse collapse"
-                                aria-labelledby="headingEleven" data-bs-parent="#accordionRecipes">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>
