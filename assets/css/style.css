@@ -1,19 +1,14 @@
 /* header styles start*/
-.header{
+.container {
+    max-width: 85%;
+}
+
+.header,
+.heading {
     background-color: #EEEFF1;
 }
-.basket{
-    width: 3rem;
-    height: 3rem;
-    background: #FFFFFF;
-    box-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
-    border-radius: 1.5rem;
-    border: none;
-}
-.icon{
-    width: 1.5rem;
-}
-.nav-link{
+
+.nav-link {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
@@ -22,11 +17,26 @@
     color: #1B1B1D;
 }
 
-.nav-link:hover{
-    color:#27aaca;
+.nav-link:hover {
+    color: #FFFFFF;
 }
-.buy{
-    width:11rem;
+
+.basket {
+    width: 3rem;
+    height: 3rem;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.basket:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.btn-dark {
+    padding: 0.75rem 1rem;
     background: #1B1B1D;
     box-shadow: 0rem 2rem 4rem rgba(163, 168, 179, 0.15);
     border-radius: 3rem;
@@ -34,19 +44,97 @@
     font-style: normal;
     font-weight: 500;
     font-size: 0.9rem;
-    line-height: 5%;
+    line-height: normal;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.buy:hover{
-    background: #FFFFFF; 
+
+.btn-dark:hover {
     color: #000000;
+    background: #FFFFFF;
 }
-.basket:hover{
-     background: #000000; 
-     color: #FFFFFF;
+
+.heading, section {
+    padding: 4.25rem 0;
 }
-.container{
-    max-width: 85%;
+
+.heading h1 {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #1B1B1D;
 }
+
+.subheading {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #64646A;
+}
+
+.heading_image {
+    width: 100%;
+    /* margin-top: -2rem; */
+}
+
 /* header styles end */
+
+.main {
+    background: linear-gradient(173.34deg,
+            #FFFFFF 0%, #FFFFFF 0%,
+            rgba(243, 244, 245, 0.2) 11.74%,
+            #F3F4F5 27.92%, rgba(243, 244, 245, 0) 44.79%,
+            rgba(243, 244, 245, 0.68) 60.42%,
+            #F3F4F5 79.17%, #FFFFFF 100%);
+}
+
+.card {
+    width: 30%;
+    border-radius: 8%;
+    background: linear-gradient(152.09deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 2rem 4rem rgba(163, 168, 179, 0.15));
+}
+
+.card-text {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #64646A;
+}
+
+.card-title {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1B1B1D;
+}
+
+section h2 {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #1B1B1D;
+}
+
+.p_center {
+    width: 45%;
+}
+
+.card .btn-dark {
+    font-size: 0.8rem;
+}
+
+#accordionRecipes, #accordionRecipes .accordion-item, #accordionRecipes button{
+    background: linear-gradient(152.09deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 2rem 4rem rgba(163, 168, 179, 0.15));
+}
