@@ -127,8 +127,15 @@ section h2 {
     color: #1B1B1D;
 }
 
-.p_center {
-    width: 45%;
+@media(max-width:900px){
+    .p_center {
+        width: 85%;
+    }
+}
+@media(min-width:900px){
+    .p_center {
+        width: 45%;
+    }
 }
 
 .card .btn-dark {
