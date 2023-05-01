@@ -1,10 +1,10 @@
 /* header styles start*/
+
 .container {
     max-width: 85%;
 }
 
-.header,
-.heading {
+.header{
     background-color: #EEEFF1;
 }
 
@@ -81,12 +81,9 @@ img {
     width: 100%;
 }
 
-/* .heading_image {
-    width: 100%;
-    margin-top: -2rem;
-} */
-
 /* header styles end */
+
+/* main styles start */
 
 .main {
     background: linear-gradient(173.34deg,
@@ -173,3 +170,12 @@ section h2 {
     box-shadow: none;
 }
 
+/* main styles end */
+
+/* footer styles start */
+
+.footer{
+    background-color: #EEEFF1;
+}
+
+/* footer styles end */
