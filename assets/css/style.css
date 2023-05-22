@@ -185,4 +185,27 @@ section h2 {
     background-color: #EEEFF1;
 }
 
+.footer_logo{
+    width: 50%;
+}
+
+.footer h4{
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    color: #1B1B1D;
+}
+
+.footer .btn{
+    font-size: 0.75rem;
+}
+
+.sub_form input{
+    border-radius: 3rem;
+    line-height: 2.5rem;
+    border:none;
+}
+
 /* footer styles end */
