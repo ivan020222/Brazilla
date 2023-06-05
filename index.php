@@ -31,16 +31,13 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerHeader">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" href="#">Home</a>
+                                    <a class="nav-link" href="#">Головна</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" href="#explore">Про нас</a>
+                                    <a class="nav-link" href="about.php">Про нас</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" href="#">Залишити вiдгук</a>
-                                </li>
-                                <li class="nav-item me-3">
-                                    <a class="nav-link" href="#">Зв'язатися з нами</a>
+                                    <a class="nav-link" href="login.php">Увійти</a>
                                 </li>
                             </ul>
                             <div class="d-flex">
@@ -123,7 +120,7 @@
                             нас також є пропозицiя для спецiалiзованих торговельних мереж i ресторанiв та iншого
                             гуртового продажу. Ми продаємо готовi бленди у наших фiрмових пакуваннях.
                         </p>
-                        <button class="btn btn-dark" type="button">Написати нам</button>
+                        <a class="btn btn-dark" href="about.php">Дізнатися більше</a>
                     </div>
                 </div>
             </section>
@@ -142,12 +139,8 @@
                             де в Африцi вирощували каву або хто серед африканцiв мiг знати про iснування кави ранiше
                             XVII столiття.
                         </p>
-                        <!-- <p class="subheading mb-3">
-                            Пропонуємо пройти невеликий тест про каву, аби дiзнатися наскiльки добре Ви знаєте про каву.
-                        </p> -->
-                        <a href="https://uk.wikipedia.org/wiki/%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%BA%D0%B0%D0%B2%D0%B8"
-                            target="_blank" class="btn btn-dark me-2" type="buttton">Дiзнатися бiльше</a>
-                        <!-- <button class="btn btn-dark" type="buttton">Пройти тест</button> -->
+                        <a href="about_coffee.php"
+                            class="btn btn-dark">Дiзнатися бiльше</a>
                     </div>
                     <div class="video_coffee col-lg-7 col-12 order-first order-lg-last mb-3 mb-lg-0">
                         <div class="ratio ratio-16x9">
@@ -404,44 +397,86 @@
                     <div class="col-12 col-lg-5 mt-5">
                         <img src="img/logo.png" alt="Logo" class="footer_logo">
                         <p class="subheading mt-4">Наша мета - якiсна продукцiя, задоволення наших клiєнтiв та
-                            працiвникiв. Долучайтесь до нас та насолоджуйтесь натуральною кавою, приготованою з любов'ю.</p>
+                            працiвникiв. Долучайтесь до нас та насолоджуйтесь натуральною кавою, приготованою з любов'ю.
+                        </p>
                     </div>
                     <div class="col-12 col-lg-4 mt-5">
-                        <h4>Наші контакти</h4>
-                        <i class="fa fa-mail"></i>
+                        <h4>Нашi контакти</h4>
+                        <div class="contact mt-3">
+                            <div class="mail d-flex flex-inline align-items-center">
+                                <a class="btn btn-light me-3" href="mailto:coffee.brazilla@gmail.com"><i
+                                        class="fa-solid fa-envelope"></i></a>
+                                <span class="subheading">coffee.brazilla@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="social mt-3">
+                            <a class="btn btn-light me-2" href="tel:0670000000"><i
+                                class="fa-solid fa-phone"></i></a>
+                            <button class="btn btn-light me-2"><i class="fa-brands fa-facebook-f"></i></button>
+                            <button class="btn btn-light me-2"><i class="fa-brands fa-square-instagram"></i></button>
+                            <button class="btn btn-light me-2"><i class="fa-brands fa-twitter"></i></button>
+                            <button class="btn btn-light"><i class="fa-brands fa-linkedin-in"></i></button>
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-between mt-4">
                     <div class="col-12 col-lg-5">
                         <h4>Знайти нас</h4>
-                        <p class="subheading mt-3">Ми доставляємо каву одразу до Вас додому, але також Ви можете купити або
-                             забрати бленди в нашому магазинi.</p>
-                        <a href="#" class="btn btn-dark">Ми на мапі</a>
+                        <p class="subheading mt-3">Ми доставляємо каву одразу до Вас додому, але також Ви можете купити
+                            або
+                            забрати бленди в нашому магазинi.</p>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#mapModal">Ми на
+                            мапI</a>
                     </div>
                     <div class="col-12 col-lg-4">
                         <form id="subscribe" class="sub_form">
                             <h4>Приєднуйтесь до нас</h4>
                             <div class="form_elem mt-3">
-                                <input class="ps-3 w-100" type="email" name="sub-email" required placeholder="E-mail">
-                                <button class="btn btn-dark mt-3" type="submit">Підписатись</button>
+                                <input class="ps-3 w-100" type="email" name="email" required placeholder="E-mail">
+                                <button class="btn btn-dark mt-3" type="submit">ПIдписатись</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="footer-container d-flex flex-inline">
+            <div class="footer-container d-flex flex-inline mt-3">
                 <p>
-                    Copyright &copy; 2023 <strong>Brazilla Coffee</strong>
+                    Ivan Vovk &copy; 2023 <strong>Brazilla Coffee</strong>
                 </p>
                 <p></p>
             </div>
         </div>
     </footer>
 
+    <div class="modal fade" tabindex="-1" id="mapModal" aria-labelledby="mapModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mapModalLabel">Ми на мапі</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-4x3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.0950449449524!2d26.96177727561633!3d49.407108261936436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4732068ee3947e73%3A0xbeec4e86129ffdd6!2sVeranda%20Coffee!5e0!3m2!1suk!2sua!4v1685972021314!5m2!1suk!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9f10b6e71b.js" crossorigin="anonymous"></script>
+    <script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
 </body>
 

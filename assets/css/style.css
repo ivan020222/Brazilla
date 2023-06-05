@@ -208,4 +208,12 @@ section h2 {
     border:none;
 }
 
+.footer .btn-light{
+    color: #64646A;
+    border-radius: 100%;
+    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
 /* footer styles end */
