@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk en">
 
 <head>
     <meta charset="utf-8">
@@ -37,12 +37,12 @@
                                     <a class="nav-link" href="about.php">Про нас</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" href="login.php">Увійти</a>
+                                    <a class="nav-link" href="login.php">Увiйти</a>
                                 </li>
                             </ul>
                             <div class="d-flex">
-                                <button class="btn basket me-3" type="button"><i
-                                        class="fa-solid fa-basket-shopping"></i></button>
+                                <a href="basket.php" class="btn basket me-3"><i
+                                        class="fa-solid fa-basket-shopping"></i></a>
                                 <a class="btn btn-dark buy" href="#blends"><span class="buying">Купити бленди</span></a>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
             </div>
         </div>
     </header>
-
+    <a id="scroller"></a>
     <main class="main">
         <div class="container">
             <section class="explore" id="explore">
@@ -90,8 +90,7 @@
                         <img src="img/coffee-beans.jpg" class="card-img-top" alt="Кавовi зерна">
                         <div class="card-body">
                             <h5 class="card-title">Про каву</h5>
-                            <p class="card-text">Тут на Вас чекають цiкавi факти про каву та iсторiя кави. А також
-                                невеликий тест про каву.</p>
+                            <p class="card-text">Тут на Вас чекають цiкавi факти про каву та iсторiя походження цього напою.</p>
                             <a href="#about_coffee" class="btn btn-dark">Дiзнатися бiльше</a>
                         </div>
                     </div>
@@ -120,7 +119,7 @@
                             нас також є пропозицiя для спецiалiзованих торговельних мереж i ресторанiв та iншого
                             гуртового продажу. Ми продаємо готовi бленди у наших фiрмових пакуваннях.
                         </p>
-                        <a class="btn btn-dark" href="about.php">Дізнатися більше</a>
+                        <a class="btn btn-dark" href="about.php">Дiзнатися бiльше</a>
                     </div>
                 </div>
             </section>
@@ -139,8 +138,8 @@
                             де в Африцi вирощували каву або хто серед африканцiв мiг знати про iснування кави ранiше
                             XVII столiття.
                         </p>
-                        <a href="about_coffee.php"
-                            class="btn btn-dark">Дiзнатися бiльше</a>
+                        <a href="https://uk.wikipedia.org/wiki/%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%BA%D0%B0%D0%B2%D0%B8"
+                            class="btn btn-dark" target="_blank">Дiзнатися бiльше</a>
                     </div>
                     <div class="video_coffee col-lg-7 col-12 order-first order-lg-last mb-3 mb-lg-0">
                         <div class="ratio ratio-16x9">
@@ -351,56 +350,25 @@
                     <p class="subheading p_center mx-auto mt-3 mb-5">Тут Ви можете обрати бленд на свiй смак у нашому
                         фiрмовому екологiчному пакуваннi.</p>
                 </div>
-                <div class="blends-cards d-flex justify-content-between flex-wrap flex-lg-nowrap">
-                    <div class="card me-lg-3 my-3 my-lg-0">
-                        <img src="img/coffee-shop.jpg" class="card-img-top" alt="Магазин кави">
-                        <div class="card-body">
-                            <h5 class="card-title">Бленд</h5>
-                            <p class="card-text">Опис бленду.</p>
-                            <div class="d-flex flex-inline align-items-center">
-                                <h5 class="price me-4" id="price_1">1 грн.</h5>
-                                <button class="btn btn-dark" type="button">Купити</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card me-lg-3 my-3 my-lg-0">
-                        <img src="img/coffee-beans.jpg" class="card-img-top" alt="Кавовi зерна">
-                        <div class="card-body">
-                            <h5 class="card-title">Бленд</h5>
-                            <p class="card-text">Опис бленду.</p>
-                            <div class="d-flex flex-inline align-items-center">
-                                <h5 class="price me-4" id="price_2">1 грн.</h5>
-                                <button class="btn btn-dark" type="button">Купити</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card my-3 my-lg-0">
-                        <img src="img/coffee-cup.jpg" class="card-img-top" alt="Чашка кави">
-                        <div class="card-body">
-                            <h5 class="card-title">Бленд</h5>
-                            <p class="card-text">Опис бленду.</p>
-                            <div class="d-flex flex-inline align-items-center">
-                                <h5 class="price me-4" id="price_3">1 грн.</h5>
-                                <button class="btn btn-dark" type="button">Купити</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php 
+                    require 'source/tovar.php';
+                    require 'views/tovars.php';
+                ?>
             </section>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-heading">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-12 col-lg-5 mt-5">
+            <div class="footer-heading pt-5">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-lg-5">
                         <img src="img/logo.png" alt="Logo" class="footer_logo">
                         <p class="subheading mt-4">Наша мета - якiсна продукцiя, задоволення наших клiєнтiв та
                             працiвникiв. Долучайтесь до нас та насолоджуйтесь натуральною кавою, приготованою з любов'ю.
                         </p>
                     </div>
-                    <div class="col-12 col-lg-4 mt-5">
+                    <div class="col-12 col-lg-4 mt-lg-0 mt-4">
                         <h4>Нашi контакти</h4>
                         <div class="contact mt-3">
                             <div class="mail d-flex flex-inline align-items-center">
@@ -419,20 +387,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-between mt-4">
-                    <div class="col-12 col-lg-5">
+                <div class="row d-flex justify-content-between align-items-center mt-4">
+                    <div class="col-12 col-lg-5 mt-lg-0 mt-4">
                         <h4>Знайти нас</h4>
                         <p class="subheading mt-3">Ми доставляємо каву одразу до Вас додому, але також Ви можете купити
                             або
                             забрати бленди в нашому магазинi.</p>
-                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#mapModal">Ми на
-                            мапI</a>
+                        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#mapModal">Ми на
+                            мапi</button>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 mt-lg-0 mt-4">
                         <form id="subscribe" class="sub_form">
                             <h4>Приєднуйтесь до нас</h4>
                             <div class="form_elem mt-3">
-                                <input class="ps-3 w-100" type="email" name="email" required placeholder="E-mail">
+                                <input class="ps-3 w-100" type="text" name="name" required placeholder="Iм'я">
+                                <input class="ps-3 w-100 mt-2" type="email" name="email" required placeholder="E-mail">
                                 <button class="btn btn-dark mt-3" type="submit">ПIдписатись</button>
                             </div>
                         </form>
@@ -443,7 +412,6 @@
                 <p>
                     Ivan Vovk &copy; 2023 <strong>Brazilla Coffee</strong>
                 </p>
-                <p></p>
             </div>
         </div>
     </footer>
@@ -452,7 +420,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="mapModalLabel">Ми на мапі</h5>
+                    <h5 class="modal-title" id="mapModalLabel">Ми на мапi</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -469,7 +437,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

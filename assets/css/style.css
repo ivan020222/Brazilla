@@ -21,6 +21,14 @@
     color: #FFFFFF;
 }
 
+.article-navbrand{
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #1B1B1D;
+}
+
 .basket {
     width: 3rem;
     height: 3rem;
@@ -28,6 +36,9 @@
     box-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
     border-radius: 1.5rem;
     border: none;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 0.75rem;
 }
 
 .basket:hover {
@@ -95,7 +106,7 @@ img {
 }
 
 .card {
-    border-radius: 8%;
+    border-radius: 1.25rem;
     background: linear-gradient(152.09deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 2rem 4rem rgba(163, 168, 179, 0.15));
 }
@@ -107,6 +118,10 @@ img {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #64646A;
+}
+
+.card-img-top{
+    border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .card-title {
@@ -217,3 +232,41 @@ section h2 {
 }
 
 /* footer styles end */
+
+#scroller {
+    display: inline-block;
+    background-color: #999389;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #scroller::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #scroller:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #scroller:active {
+    background-color: #555;
+  }
+  #scroller.show {
+    opacity: 1;
+    visibility: visible;
+  }

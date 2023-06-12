@@ -13,8 +13,36 @@ $('#subscribe').on('submit', function (e) {
         data: $form.serialize()
     }).done(function () {
         $form[0].reset()
-        alert('Thank you for the subscription!')
+        alert('Дякуємо за підписку!')
     }).fail(function () {
-        alert('Something went wrong')
+        alert('Щось пішло не так.')
     });
+});
+
+$('.btn-buy').click(function () {
+    var id = $(this).attr('id');
+    $.ajax({
+        type: "POST",
+        url: 'source/cart.php',
+        data: {id_tov: id},
+    }).done(function(){
+        alert('Товар додано до кошика');
+    }).fail(function(){
+        alert('Помилка.');
+    });
+});
+
+var btn = $('#scroller');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
 });

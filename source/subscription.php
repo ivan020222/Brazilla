@@ -4,9 +4,9 @@ const SUBSCRIPTIONS_FILE = '../storage/subscriptions.ser';
 * Дістає список із усіх підписок з файлу
 * @return array
 */
-function allSubscriptions()
+function allSubscriptions($filename)
 {
- $fileContent = file_get_contents(SUBSCRIPTIONS_FILE);
+ $fileContent = file_get_contents($filename);
  $subscriptions = unserialize($fileContent);
  return $subscriptions ? $subscriptions : [];
 }
@@ -16,7 +16,7 @@ function allSubscriptions()
 */
 function addSubscription($params)
 {
- $subscriptions = allSubscriptions();
+ $subscriptions = allSubscriptions(SUBSCRIPTIONS_FILE);
  $subscriptions[] = $params;
  file_put_contents(SUBSCRIPTIONS_FILE, serialize($subscriptions));
 }
