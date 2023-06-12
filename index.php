@@ -34,7 +34,7 @@
                                     <a class="nav-link" href="#">Головна</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" href="about.php">Про нас</a>
+                                    <a class="nav-link" href="about.php">Про мене</a>
                                 </li>
                                 <li class="nav-item me-3">
                                     <a class="nav-link" href="login.php">Увiйти</a>
@@ -138,8 +138,8 @@
                             де в Африцi вирощували каву або хто серед африканцiв мiг знати про iснування кави ранiше
                             XVII столiття.
                         </p>
-                        <a href="https://uk.wikipedia.org/wiki/%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%BA%D0%B0%D0%B2%D0%B8"
-                            class="btn btn-dark" target="_blank">Дiзнатися бiльше</a>
+                        <a href="about_coffee.php"
+                            class="btn btn-dark">Дiзнатися бiльше</a>
                     </div>
                     <div class="video_coffee col-lg-7 col-12 order-first order-lg-last mb-3 mb-lg-0">
                         <div class="ratio ratio-16x9">
